@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/google_favicon.png" type="image/png">
+    <link rel="stylesheet" tyle="text/css" href="css/styles.css">
+    <!-- <link rel="stylesheet" tyle="text/css" href="css/styles_flex.css"> -->
+    <title>Google</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul class="left-header">
+                <li class="header-item">
+                    <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                </li>
+                <li class="header-item">
+                    <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+                </li>
+            </ul>
+            <div class="right-header">
+                <ul class="header-text">
+                    <li class="header-item">
+                        <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+                    </li>
+                </ul>
+                <div class="header-item">
+                    <a class="header-more" href="javascript:" title="Google apps" role="button"></a>
+                </div>
+                <div class="header-item signin">
+                    <div class="signin-button">
+                        <a class="header-signin" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/" target="_top">Sign in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </header>
+
+        <main>
+            <div class="icon">
+                <img src="images/google_icon.png" alt="google icon">
+            </div>
+            <div class="search-box" id="search-box">
+                <div class="input-area">
+                    <div class="search-icon">
+                        <span class="search-svg">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                        </span>
+                    </div>
+                    <div class="search-input">
+                        <form><input type="text" name="search" id="inputTxt"></form>
+                    </div>
+                    <div class="listen-icon">
+                        <span class="listen-img"></span>
+                    </div>
+                </div>
+                <div class="search-hidden-section">
+                    <div class="border"></div>
+                    <div class="history-box">
+                        <div class="history-title">
+                            <span>Try searching for</span>
+                        </div>
+                        <ul class="history-list">
+<!-- TODO fix bug-->
+                            <li class="history-item" onclick="javascript:alert('event has been triggered');"> 
+                                <span class="search-img"></span>
+                                <span class="history-content">wallpaper</span>
+                            </li>
+                            <li class="history-item" onclick="changeInput(1)">
+                                <span class="search-img"></span>
+                                <span class="history-content">restaurants nearby</span>
+                            </li>
+                            <li class="history-item" onclick="changeInput(2)">
+                                <span class="search-img"></span>
+                                <span class="history-content">jobs near me</span>
+                            </li>
+                            <li class="history-item" onclick="changeInput(3)">
+                                <span class="search-img"></span>
+                                <span class="history-content">videos</span>
+                            </li>
+                            <li class="history-item" onclick="changeInput(4)">
+                                <span class="search-img"></span>
+                                <span class="history-content">keyboard</span>
+                            </li>
+                            <li class="history-item" onclick="changeInput(5)">
+                                <span class="search-img"></span>
+                                <span class="history-content">pizza delivery</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-buttons">
+                        <div class="button" role="button">Google Search</div>
+                        <div class="button" role="button">I'm Feeling Lucky</div>
+                    </div>
+                    <div class="report-area">
+                        <a href="#">Report inappropriate predictions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="search-buttons" id="outer">
+                <div class="button" role="button">Google Search</div>
+                <div class="button" role="button">I'm Feeling Lucky</div>
+            </div>
+            <div class="clear"></div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <ul class="left-footer">
+                    <li class="footer-item">
+                        <a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+                    </li>
+                </ul>
+                <ul class="right-footer">
+                    <li class="footer-item">
+                        <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="https://policies.google.com/terms?fg=1">Terms</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="javascript:showSetting()">Settings</a>
+                        <span id="setting-extension">
+                            <a href="https://www.google.com/preferences?hl=en&fg=1">Search setttings</a>
+                            <a href="https://www.google.com/advanced_search?hl=en&fg=1">Advanced search</a>
+                            <a href="https://www.google.com/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1">Your data in Search</a>
+                            <a href="https://www.google.com/history/optout?hl=en&fg=1">History</a>
+                            <a href="https://support.google.com/websearch/?visit_id=637146410786481081-3157840961&hl=en&rd=2#topic=3378866">Search Help</a>
+                            <a href="#">Send feedback</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </footer>
+        <script>
+            var box = document.getElementById("inputTxt");
+            box.onfocus = function () {document.getElementById("outer").style.display="none";};
+            box.onblur = function () {document.getElementById("outer").style.display="block";};
+
+            // var set = document.getElementById("setting-extension");
+            // set.onblur = function () {document.getElementById("setting-extension").style.display="none";};
+
+            function changeInput(n) {
+                alert("hello");
+                var texts = document.getElementsByClassName("history-content");
+                var text = tests[n].innerHTML; 
+                console.log(texts);
+                var input = document.getElementsById("inputTxt");
+                inputTxt.value = text;
+            }
+            
+            function showSetting() {
+                var setting = document.getElementById("setting-extension");
+                var display = setting.style.display;
+                if (display == "none") {
+                    setting.style.display = "block";
+                }
+                else {
+                    setting.style.display = "none";
+                }
+            }
+
+        </script>
+    </div>
+</body>
+</html>

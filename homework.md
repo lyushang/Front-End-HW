@@ -118,7 +118,7 @@ text-indent, text-align, text-shadow, line-height, word-spacing, letter-spacing,
 3. rem：大小不是固定的，始终基于根元素```<html>```的大小
 ---
 ## **12.	如何做一个底栏能够一直在底部的(sticky-footer)?有几种方法？那种比较好？（负margin, flex)**
-1. 负margin方法：给main content块设置padding-bottom为footer的高度，然后将footer的margin-top设置为负自身高度
+1. 负margin方法：给整个网页的container设置min-height为100%，给main content块设置padding-bottom为footer的高度，然后将footer的margin-top设置为负自身高度
 
     优势：兼容性最佳
 
@@ -128,6 +128,10 @@ text-indent, text-align, text-shadow, line-height, word-spacing, letter-spacing,
     优势：结构简单，方便使用
 
     劣势：兼容性较差
+3. Absolute方法：给整个网页的container设置min-height为100%与position:absolute，再给footer设置position:absolute与bottom/left为0.
+
+    优势：无需明确footer与content高度
+    劣势：？
 ---
 ## **13.	屏幕适配（媒体查询media-query）**
 - 表达式 @media (condition){} 如果condition为true则运行内部CSS。应用于不同屏幕情况下的CSS变更。
