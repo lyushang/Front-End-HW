@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/google_favicon.png" type="image/png">
-    <link rel="stylesheet" tyle="text/css" href="css/styles.css">
+    <link rel="stylesheet" tyle="text/css" href="css/styles_flex.css">
     <title>Google</title>
 </head>
 <body>
@@ -143,8 +143,7 @@
         <script>
             var box = document.getElementById("inputTxt");
             box.onfocus = function () {document.getElementById("outer").style.display="none";
-            document.getElementById("hidden").style.display="block";
-            document.getElementById("search-box").style.height = "343px";};
+            document.getElementById("hidden").style.display="block";};
      
             function changeInput(n) {
                 var texts = document.getElementsByClassName("history-content");
@@ -153,7 +152,6 @@
                 inputTxt.value = text;
                 document.getElementById("hidden").style.display="none";
                 document.getElementById("outer").style.display="block";
-                document.getElementById("search-box").style.height = "44px";
             }
             
             function showSetting() {

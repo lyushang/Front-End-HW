@@ -183,6 +183,8 @@ main {
 .icon {
     height: 233px;
     text-align: center;
+    width: 272px;
+    margin: 0 auto;
 }
 
 .icon img{
@@ -210,14 +212,10 @@ main {
 }
 
 .search-box:focus-within {
-    height: 343px;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     border-color: rgba(223,225,229,0);
 }
 
-.search-box:focus-within .search-hidden-section{
-    display: block;
-}
 
 .search-icon, .search-input, .listen-icon{
     float: left;
