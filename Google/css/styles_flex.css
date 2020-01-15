@@ -364,6 +364,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .right-footer {
@@ -375,11 +376,10 @@ footer {
     position: absolute;
     display: none;
     border: 1px solid #999;
-    bottom: -98px;
-    right: 33px;
+    bottom: 30px;
+    right: 32px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     text-align: left;
-    z-index: 104;
 }
 
 #setting-extension a {

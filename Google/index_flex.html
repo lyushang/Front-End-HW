@@ -156,7 +156,8 @@
             
             function showSetting() {
                 var setting = document.getElementById("setting-extension");
-                var display = setting.style.display;
+                var display = window.getComputedStyle(setting, null).display;
+
                 if (display == "none") {
                     setting.style.display = "block";
                 }
